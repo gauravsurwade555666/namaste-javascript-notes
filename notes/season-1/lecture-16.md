@@ -28,6 +28,17 @@
 
 <hr>
 
+### Things learned:
+1. JS runtime environment contains all elements required to run JS.
+2. It contains JS engine, set of API's, callback queue, microtask queue, event loop.
+3. JS engine is a piece of code.
+4. Process includes Parsing ---> Compilation -----> Execution.
+5. Parsing breaks code into tokens and converts it into AST(Abstract Syntax Tree).
+6. Modern JS engine follows JIT compilation, it interprets while it optimises code as much as it can.
+7. Execution and Compilation are done together.
+8. Execution has Garbage collector and other optimisation such as inlining, copy elusion, inline caching etc.
+9. Fell in love with JS. ❤❤
+
 Watch Live On Youtube below:
 
 <a href="https://www.youtube.com/watch?v=2WJL19wDH68&ab_channel=AkshaySaini" target="_blank"><img src="https://img.youtube.com/vi/2WJL19wDH68/0.jpg" width="750"
