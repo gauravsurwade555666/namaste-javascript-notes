@@ -19,7 +19,7 @@ Same as of Promise.all sucess scenario. Irrespective of timing it will wait unti
 #### - Error [ Fail Fast ]
 If p3 gives an error, irrespective of timing it will wait untill all the promises are settled (settled = success or error ) and will return the array of responses [val1, val2,** Error1**].
 
-### 2. Promise.race( [ p1 , p2 , p3 ] );    it seeks for settled promise, whichever completes first it will return that irrespective or sucess or error
+### 3. Promise.race( [ p1 , p2 , p3 ] );    it seeks for settled promise, whichever completes first it will return that irrespective or sucess or error
 it takes an array of promises. 
 Assume that p1 takes 3 sec to get resolved. p2 takes 2 sec to get resolved p3 takes 1 sec to get resolved.
 
@@ -27,7 +27,7 @@ Assume that p1 takes 3 sec to get resolved. p2 takes 2 sec to get resolved p3 ta
 This Promise API return the response or error from the promise which is settled (success or error) first.
 In our case p3 promise take only 1 sec which is less than other so Promise.race API will return success response or error received from p3 only.
 
-### 2. Promise.any( [ p1 , p2 , p3 ] );    it seeks for successfully resolved promises.
+### 4. Promise.any( [ p1 , p2 , p3 ] );    it seeks for successfully resolved promises.
 it takes an array of promises. 
 Assume that p1 takes 3 sec to get resolved. p2 takes 2 sec to get resolved p3 takes 1 sec to get resolved.
 
