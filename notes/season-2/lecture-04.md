@@ -17,7 +17,7 @@ Assume that p1 takes 3 sec to get resolved. p2 takes 2 sec to get resolved p3 ta
 Same as of Promise.all sucess scenario. Irrespective of timing it will wait untill all the promises are resolved and will return the array of responses [val1, val2, val3]
 
 #### - Error [ Fail Fast ]
-If p3 gives an error, irrespective of timing it will wait untill all the promises are settled ** (settled = success or error )** and will return the array of responses [val1, val2,** Error1**].
+If p3 gives an error, irrespective of timing it will wait untill all the promises are settled **(settled = success or error )** and will return the array of responses [val1, val2,** Error1**].
 
 ### 3. Promise.race( [ p1 , p2 , p3 ] );    it seeks for settled promise, whichever completes first it will return that irrespective or sucess or error
 it takes an array of promises. 
