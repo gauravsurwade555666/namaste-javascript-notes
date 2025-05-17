@@ -1,5 +1,10 @@
 # Promise APIs
-#### Promise.all([p1,p2,p3]);
+#### Promise.all([p1,p2,p3]);   
+it takes an array of promises. 
+Assume that p1 takes 3 sec to get resolved. p2 takes 2 sec to get resolved p3 takes 1 sec to get resolved.
+
+Sucesss
+- irrespective of timing it will wait untill all the promises are resolved and will return the array of responses [val1, val2, val3]
 
 
 # Episode 23 : async await
