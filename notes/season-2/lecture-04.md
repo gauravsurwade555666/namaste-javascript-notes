@@ -1,5 +1,5 @@
 # Promise APIs
-#### 1. Promise.all( [ p1 , p2 , p3 ] );   
+### 1. Promise.all( [ p1 , p2 , p3 ] );   
 it takes an array of promises. 
 Assume that p1 takes 3 sec to get resolved. p2 takes 2 sec to get resolved p3 takes 1 sec to get resolved.
 
@@ -9,7 +9,7 @@ irrespective of timing it will wait untill all the promises are resolved and wil
 #### - Error [ Fail Fast ]
 if any of the promises encouters error, it will immediately return the **Error** and won't wait for other promises. 
 
-#### 1. Promise.allSettled( [ p1 , p2 , p3 ] );   
+### 2. Promise.allSettled( [ p1 , p2 , p3 ] );   
 it takes an array of promises. 
 Assume that p1 takes 3 sec to get resolved. p2 takes 2 sec to get resolved p3 takes 1 sec to get resolved.
 
@@ -18,6 +18,23 @@ Same as of Promise.all sucess scenario. Irrespective of timing it will wait unti
 
 #### - Error [ Fail Fast ]
 If p3 gives an error, irrespective of timing it will wait untill all the promises are settled (settled = success or error ) and will return the array of responses [val1, val2,** Error1**].
+
+### 2. Promise.race( [ p1 , p2 , p3 ] );    it seeks for settled promise, whichever completes first it will return that irrespective or sucess or error
+it takes an array of promises. 
+Assume that p1 takes 3 sec to get resolved. p2 takes 2 sec to get resolved p3 takes 1 sec to get resolved.
+
+#### - Sucesss & Error
+This Promise API return the response or error from the promise which is settled (success or error) first.
+In our case p3 promise take only 1 sec which is less than other so Promise.race API will return success response or error received from p3 only.
+
+### 2. Promise.any( [ p1 , p2 , p3 ] );    it seeks for successfully resolved promises.
+it takes an array of promises. 
+Assume that p1 takes 3 sec to get resolved. p2 takes 2 sec to get resolved p3 takes 1 sec to get resolved.
+
+#### - Sucesss & Error
+it will return the response from promise which get resolved successfully first.
+imagine in our scenario p3 takes the least time but it encountered error then it will wait for another promise to get resolved.
+If out of all the promised nothing get resolved and all ended up in error then it return an aggregated error in response i.e. array of errors [ err1 , err2, err3 ].
 
 
 
