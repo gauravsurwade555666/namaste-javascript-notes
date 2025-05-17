@@ -6,6 +6,20 @@ Assume that p1 takes 3 sec to get resolved. p2 takes 2 sec to get resolved p3 ta
 #### - Sucesss
 irrespective of timing it will wait untill all the promises are resolved and will return the array of responses [val1, val2, val3]
 
+#### - Error [ Fail Fast ]
+if any of the promises encouters error, it will immediately return the **Error** and won't wait for other promises. 
+
+#### 1. Promise.allSetteled( [ p1 , p2 , p3 ] );   
+it takes an array of promises. 
+Assume that p1 takes 3 sec to get resolved. p2 takes 2 sec to get resolved p3 takes 1 sec to get resolved.
+
+#### - Sucesss
+Same as of Promise.all sucess scenario. Irrespective of timing it will wait untill all the promises are resolved and will return the array of responses [val1, val2, val3]
+
+#### - Error [ Fail Fast ]
+If p3 gives an error, irrespective of timing it will wait untill all the promises are settled (setteled = success or error ) and will return the array of responses [val1, val2,** Error1**].
+
+
 
 # Episode 23 : async await
 
