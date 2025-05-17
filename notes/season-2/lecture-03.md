@@ -202,7 +202,7 @@ Watch Live On Youtube below:
 <a href="https://www.youtube.com/watch?v=U74BJcr8NeQ&list=PLlasXeu85E9eWOpw9jxHOQyGMRiBZ60aX&index=4&ab_channel=AkshaySaini" target="_blank"><img src="https://img.youtube.com/vi/U74BJcr8NeQ/0.jpg" width="750"
 alt="promise in Javascript Youtube Link"/></a>
 
-
+### Summary
 
 1. Promise can be created using a new Promise() constructor function.
 2. This constructor function takes a callback function as argument. 
