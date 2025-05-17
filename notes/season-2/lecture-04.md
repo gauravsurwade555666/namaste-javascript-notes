@@ -1,3 +1,7 @@
+# Promise APIs
+#### Promise.all([p1,p2,p3]);
+
+
 # Episode 23 : async await
 
 ###
