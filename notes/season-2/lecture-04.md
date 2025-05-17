@@ -34,9 +34,11 @@ Assume that p1 takes 3 sec to get resolved. p2 takes 2 sec to get resolved p3 ta
 #### - Sucesss & Error
 it will return the response from promise which get resolved successfully first.
 imagine in our scenario p3 takes the least time but it encountered error then it will ignore that it will wait for another promise to get resolved.
-If out of all the promised nothing get resolved and all ended up in error then it return an **aggregated error** in response i.e. array of errors [ err1 , err2, err3 ]. usine console.log(error.error
+If out of all the promised nothing get resolved and all ended up in error then it return an **aggregated error** in response i.e. array of errors [ err1 , err2, err3 ]. usine console.log(err.errors) you can get array of all the errors.
 
-![image](https://github.com/user-attachments/assets/99f89635-57b6-467f-b365-9876f0ca1815)
+![image](https://github.com/user-attachments/assets/31127cbc-50e2-439a-8a4f-9d694a7c86b1)
+![image](https://github.com/user-attachments/assets/74ef720c-4e91-4352-ac22-c372c0759610)
+
 
 
 # Episode 23 : async await
