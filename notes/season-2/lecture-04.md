@@ -294,3 +294,11 @@ Watch Live On Youtube below:
 
 <a href="https://www.youtube.com/watch?v=6nv3qy3oNkc&list=PLlasXeu85E9eWOpw9jxHOQyGMRiBZ60aX&index=4&ab_channel=AkshaySaini" target="_blank"><img src="https://img.youtube.com/vi/6nv3qy3oNkc/0.jpg" width="750"
 alt="async-await in Javascript Youtube Link"/></a>
+
+### Summary 
+- Async/await used for handling promises
+- Async always return a promise
+- Await can only used inside an async function
+- Can only write await keyword infront of a promise
+- While awaiting JS Engine does not actually wait rather the function is suspended and call stack is free for other stuffs but it looks like program is waiting at that point
+- Use try catch for Error handling and can also use  . Catch() method
