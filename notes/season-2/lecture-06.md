@@ -43,7 +43,8 @@ window.x(); // global window object
 ```
 
 ## `this` inside a object's method
-
+-method
+if you  write function which is part of an object then its called method.
 ```js
 // `x` key below is a method as per terminology
 const obj = {
