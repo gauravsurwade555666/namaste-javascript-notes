@@ -6,6 +6,7 @@ The final function then executes with all the arguments.
 ## Why Use Currying?
 - It helps create reusable and more flexible functions.
 - It allows partial application of functions (pre-filling some arguments).
+
 Example
 Without Currying
 
