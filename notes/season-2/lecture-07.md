@@ -32,6 +32,18 @@ console.log(add(1)(2)(3)); // 6
 ```
 
 
+Using ES6 Arrow Functions
+```js
+const add = a => b => c => a + b + c;
+
+console.log(add(1)(2)(3)); // 6
+```
+How It Works
+- add(1) returns a function that takes b.
+- add(1)(2) returns a function that takes c.
+- add(1)(2)(3) returns the sum.
+
+
 
 ![image](https://github.com/user-attachments/assets/231354a0-5356-455b-bff3-5aa810bf5423)
 
