@@ -82,6 +82,12 @@ student.printName.call(student2); // Kajal
 
 // So, call, bind and apply is used to set the value of this keyword.
 ```
+![image](https://github.com/user-attachments/assets/f86a5c3c-5921-4842-9158-8b52f83d9d02)
+All these methods are user for method/functions borrowing/sharing.
+1. call method is used to call the function with the given this value and argument can be passed individually.
+2. apply method is similar to call method, the only difference is that instead of passing argument individually, will pass the argument in a list/array.
+3. bind method is similar to call method. It is also used to override this value, but the difference is it will not invoke the function instantly but return a function with attached this and argument which can be called later.
+
 
 ## `this` inside arrow function
 
