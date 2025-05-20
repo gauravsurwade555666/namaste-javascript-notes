@@ -18,6 +18,21 @@ function add(a, b, c) {
 console.log(add(1, 2, 3)); // 6
 ```
 
+With Currying
+```js
+function add(a) {
+  return function(b) {
+    return function(c) {
+      return a + b + c;
+    }
+  }
+}
+
+console.log(add(1)(2)(3)); // 6
+```
+
+
+
 ![image](https://github.com/user-attachments/assets/231354a0-5356-455b-bff3-5aa810bf5423)
 
 ![image](https://github.com/user-attachments/assets/830756fa-b84e-456a-9fa1-cb07e072c0d1)
